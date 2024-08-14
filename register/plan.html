@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP UAE SMB Program - Select Plan/Partner</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center p-3">
+        <div style="cursor: pointer;" class="d-flex align-items-center" onclick="location.href='../home/home.html';">
+            <div class="hp-logo">
+                <img src="https://via.placeholder.com/40x40?text=HP" alt="HP Logo">
+            </div>
+            <div class="ml-2 header-logo">
+                <p class="mb-0">HP App<br>Powered by Redington</p>
+            </div>
+        </div>
+        <div class="program-title text-center">
+            <h1 class="mb-0">HP UAE SMB Program</h1>
+        </div>
+        <div class="nav-links d-flex align-items-center">
+            <a href="#" class="mr-3">1. Personal Details</a>
+            <a href="#" class="mr-3 active">2. Plan Details</a>
+            <a href="#">3. Contract Generation</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-3">
+        <div class="row">
+            <!-- Select Plan/Partner Form -->
+            <div class="col-md-12">
+                <h2>2. Select Plan/Partner</h2>
+                <form class="mt-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="packageOffering">Package Offerings</label>
+                                        <div class="d-flex">
+                                            <select class="form-control" id="packageOffering">
+                                                <option>Mercury</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <label>Or</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label for="printers">Printers</label>
+                                        <div class="d-flex">
+                                            <select class="form-control" id="printers">
+                                                <option>Printers</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="offeringName">Offering Name :</label>
+                                <textarea class="form-control" id="offeringName" rows="4" readonly>
+Product Type         Product No         Description
+XXXX                     XXXXX               XXXXXX
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="plan">Plan</label>
+                                <select class="form-control" id="plan">
+                                    <option>Plan 1</option>
+                                    <option>Plan 2</option>
+                                    <!-- Add options here -->
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="monthlyInvoice">Monthly Invoice</label>
+                                        <input type="text" class="form-control invoice-fields" id="monthlyInvoice"
+                                            readonly>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="monoPages">Included Mono A4 Pages</label>
+                                        <input type="text" class="form-control invoice-fields" id="monoPages" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="colorPages">Included Color A4 Pages</label>
+                                        <input type="text" class="form-control invoice-fields" id="colorPages" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="partners">Partners</label>
+                                <div class="d-flex">
+                                    <select class="form-control" id="partners">
+                                        <option>Partner 1</option>
+                                        <option>Partner 2</option>
+                                        <option>Partner 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="partnerDetails">Partner Details:</label>
+                                <textarea class="form-control" id="partnerDetails" rows="4" readonly>
+Partner Name        XXXX
+Email                     XXXX
+Contact No            XXXX
+Address                 XXXX
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="paymentTerms">Payment Terms</label>
+                                <div class="d-flex">
+                                    <select id="paymentTerms" class="form-control">
+                                        <option>6 months</option>
+                                        <option>12 months</option>
+                                        <option>36 months</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex justify-content-end">
+                                <button type="button" class="btn btn-secondary mr-3"
+                                    onclick="window.history.back();">Back</button>
+                                <button type="button" class="btn btn-success"
+                                    onclick="location.href='contract.html';">Preview Contract</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <p>Redington Gulf FZE<br>
+                        Level 16 Burjuman Business Tower<br>
+                        Sheikh Khalifa Bin Zayed St, Al Mankhool, Dubai, United Arab Emirates<br>
+                        <span>Email Address: supportb2b@redingtongroup.com</span><br>
+                        <span>Hot line: +971 4 516 1000 : Customer Support: +971 4 516 2000</span>
+                    </p>
+                </div>
+                <div class="col-md-3 text-right">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">About Us</a></li>
+                        <li class="list-inline-item"><a href="#">FAQs</a></li>
+                        <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                        <li class="list-inline-item"><button class="btn btn-success"
+                                onclick="location.href='../getintouch.html';">Call me back</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

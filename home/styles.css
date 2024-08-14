@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #53a264;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.header-logo {
+    color: #fff;
+}
+
+.hp-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.program-title h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links button {
+    color: #fff;
+    background-color: #198754;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links > a.active {
+    text-decoration: underline; 
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.right-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer p > span {
+    color: #53a264;
+}
+
+footer .list-inline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+footer .list-inline-item {
+    margin-right: 10px;
+}
+
+footer .list-inline-item > a {
+    color: #000;
+}
+
+footer .btn-primary {
+    margin-top: 10px;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+.footer .col-md-9 p {
+    margin-bottom: 0;
+}

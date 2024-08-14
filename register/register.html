@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP UAE SMB Program - Register</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center p-3">
+        <div style="cursor: pointer;" class="d-flex align-items-center" onclick="location.href='../home/home.html';">
+            <div class="hp-logo">
+                <img src="https://via.placeholder.com/40x40?text=HP" alt="HP Logo">
+            </div>
+            <div class="ml-2 header-logo">
+                <p class="mb-0">HP App<br>Powered by Redington</p>
+            </div>
+        </div>
+        <div class="program-title text-center">
+            <h1 class="mb-0">HP UAE SMB Program</h1>
+        </div>
+        <div class="nav-links d-flex align-items-center">
+            <!-- <a href="#" class="mr-3">How it works >>> </a> -->
+            <a href="#" class="mr-3 active">1. Personal Details</a>
+            <a href="#" class="mr-3">2. Plan Details</a>
+            <a href="#">3. Contract Generation</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-3">
+        <div class="row">
+            <!-- Registration Form -->
+            <div class="col-md-12">
+                <h2>1. Personal Details</h2>
+                <form id="myForm">
+                    <div class="row">
+                        <div class="col-md-6 border-right">
+                            <div class="form-group">
+                                <label for="name">Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="country" value="UAE" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="region">Region <span class="text-danger">*</span></label>
+                                <select class="form-control" id="region">
+                                    <option value="1192">Abu Dhabi</option>
+                                    <option value="1220">Abu Dhabi - FZ</option>
+                                    <option value="1193">Ajman</option>
+                                    <option value="1221">Ajman - FZ</option>
+                                    <option value="1194">Al Ain</option>
+                                    <option value="1211">Al Quoz</option>
+                                    <option value="1212">Aweer</option>
+                                    <option value="1213">Bur Dubai / Karama</option>
+                                    <option value="1214">Deira</option>
+                                    <option value="1198">Diba Al Baya</option>
+                                    <option value="1197">Diba Al Hesn</option>
+                                    <option value="1196">Dibba</option>
+                                    <option value="1199">Dubai</option>
+                                    <option value="1222">Dubai - FZ</option>
+                                    <option value="1215">Dubai Media/Internet</option>
+                                    <option value="1200">Fujairah</option>
+                                    <option value="1223">Fujairah - FZ</option>
+                                    <option value="1216">Garhoud</option>
+                                    <option value="1203">Jebel Ali</option>
+                                    <option value="1201">Kalba</option>
+                                    <option value="1202">Khawr Fakkan</option>
+                                    <option value="1204">Mina Saqr</option>
+                                    <option value="1205">Mina Zayid</option>
+                                    <option value="1217">Qusais</option>
+                                    <option value="1208">Qutuf</option>
+                                    <option value="1206">Ras al-Khaimah</option>
+                                    <option value="1224">Ras al-Khaimah - FZ</option>
+                                    <option value="1218">Rashidiya</option>
+                                    <option value="1195">Ruwais</option>
+                                    <option value="1209">Sharjah</option>
+                                    <option value="1226">Sharjah - FZ</option>
+                                    <option value="1219">Shk Zayed Road</option>
+                                    <option value="1210">Sila</option>
+                                    <option value="1207">Umm al-Qaiwain</option>
+                                    <option value="1225">Umm al-Qaiwain - FZ</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactPerson">Contact Person</label>
+                                <input type="text" class="form-control" id="contactPerson"
+                                    placeholder="Enter contact person">
+                            </div>
+                            <div class="form-group">
+                                <label for="mobileNumber">Mobile Number <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text mt-1" id="countryCode">+971</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="mobileNumber" maxlength="12" required
+                                        aria-describedby="countryCode">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="addressLine1">Address<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control mb-3" id="addressLine1"
+                                    placeholder="Enter your address line 1" required>
+                                <input type="text" class="form-control" id="addressLine2"
+                                    placeholder="Enter your address line 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" id="submitBtn" class="btn btn-success">Next >></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <p>Redington Gulf FZE<br>
+                        Level 16 Burjuman Business Tower<br>
+                        Sheikh Khalifa Bin Zayed St, Al Mankhool, Dubai, United Arab Emirates<br>
+                        <span>Email Address: supportb2b@redingtongroup.com</span><br>
+                        <span>Hot line: +971 4 516 1000 : Customer Support: +971 4 516 2000</span>
+                    </p>
+                </div>
+                <div class="col-md-3 text-right">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">About Us</a></li>
+                        <li class="list-inline-item"><a href="#">FAQs</a></li>
+                        <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                        <li class="list-inline-item"><button class="btn btn-success"
+                                onclick="location.href='../getintouch.html';">Call me back</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function (event) {
+            event.preventDefault();
+            var form = document.getElementById('myForm');
+            if (form.checkValidity()) {
+                window.location.href = 'plan.html'; // Redirect if the form is valid
+            } else {
+                form.reportValidity(); // Show validation errors
+            }
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP UAE SMB Program - Select Plan/Partner</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .document-viewer {
+            border: 1px solid #ccc;
+            padding: 15px;
+            height: 500px;
+            overflow-y: scroll;
+        }
+
+        .document-viewer table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .terms-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .terms-container .form-check {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .btn-group {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .form-check-label a {
+            text-decoration: underline;
+        }
+
+        .agreement-contract img {
+            object-fit: contain;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center p-3">
+        <div style="cursor: pointer;" class="d-flex align-items-center" onclick="location.href='../home/home.html';">
+            <div class="hp-logo">
+                <img src="https://via.placeholder.com/40x40?text=HP" alt="HP Logo">
+            </div>
+            <div class="ml-2 header-logo">
+                <p class="mb-0">HP App<br>Powered by Redington</p>
+            </div>
+        </div>
+        <div class="program-title text-center">
+            <h1 class="mb-0">HP UAE SMB Program</h1>
+        </div>
+        <div class="nav-links d-flex align-items-center">
+            <a href="#" class="mr-3">1. Personal Details</a>
+            <a href="#" class="mr-3">2. Plan Details</a>
+            <a href="#" class="active">3. Contract Generation</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <!-- <div class="container-fluid mt-3">
+        <div class="agreement" id="agreement-content">
+            <img src="image1.png" alt="Agreement Page 1" />
+            <img src="image2.png" alt="Agreement Page 2" />
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="acceptTerms" />
+                <label for="acceptTerms">I accept <a href="#">Terms and Conditions</a></label>
+            </div>
+
+            <div class="buttons">
+                <button id="backToForm">Back</button>
+                <button>Send Contract to Email</button>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container mt-3">
+        <div class="row agreement-contract">
+            <div class="col-md-6 border-right">
+                <div class="text-right">1/2</div>
+                <img src="../assets/contract1.jpg" alt="Agreement Page 1" />
+            </div>
+            <div class="col-md-6">
+                <div class="text-right">2/2</div>
+                <img src="../assets/contract2.jpg" alt="Agreement Page 2" />
+            </div>
+            <!-- <div class="col-md-6">
+                <div class="document-viewer">
+                    <h5 class="text-center">FIXED TERM HARDWARE RENTAL AGREEMENT</h5>
+                    <p>Reference Number: _____________________Date: _____________________</p>
+                    <p>
+                        <strong>First Party</strong> having its registered office in <strong>Dubai, United Arab
+                            Emirates</strong>
+                        (Hereinafter called the "Supplier") of the one part and <strong>Second Party</strong> having its
+                        registered office in
+                        (Hereinafter called the "Client") of the other part.
+                    </p>
+                    <p>
+                        <strong>1. SCOPE OF AGREEMENT</strong><br>
+                        1.1 Supplier agrees to lease, the Supplier hereby agrees to supply and Client agrees to rent the
+                        Equipment for the duration
+                        of the term of the agreement. The Equipment to be supplied under this agreement are described in
+                        Annexure - A.
+                        <br>
+                        ...
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="document-viewer">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th colspan="3" class="text-center">ANNEXURE - A</th>
+                            </tr>
+                            <tr>
+                                <th>Serial No</th>
+                                <th>Device Model</th>
+                                <th>Device S/N</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Model X</td>
+                                <td>SN12345</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="text-center">ANNEXURE - B COMMERCIALS</th>
+                            </tr>
+                            <tr>
+                                <th>Device Model</th>
+                                <th>Quantity</th>
+                                <th>Monthly Rental (AED)</th>
+                                <th>Included Mono A4 Pages</th>
+                                <th>Included Color A4 Pages</th>
+                                <th>Excess Mono Rate (AED)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Model X</td>
+                                <td>10</td>
+                                <td>500</td>
+                                <td>1000</td>
+                                <td>500</td>
+                                <td>0.25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- Terms and Conditions Checkbox -->
+        <div class="terms-container row ml-2">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="termsCheck">
+
+            </div>
+            <label class="form-check-label" for="termsCheck">
+                I accept <a href="#">Terms and Conditions</a>
+            </label>
+        </div>
+
+        <!-- Button Group -->
+        <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-secondary mr-3" onclick="window.history.back();">Back</button>
+            <button type="submit" class="btn btn-success" onclick="alert('Contract sent to your email');">Send Contract
+                to Email</button>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <p>Redington Gulf FZE<br>
+                        Level 16 Burjuman Business Tower<br>
+                        Sheikh Khalifa Bin Zayed St, Al Mankhool, Dubai, United Arab Emirates<br>
+                        <span>Email Address: supportb2b@redingtongroup.com</span><br>
+                        <span>Hot line: +971 4 516 1000 : Customer Support: +971 4 516 2000</span>
+                    </p>
+                </div>
+                <div class="col-md-3 text-right">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">About Us</a></li>
+                        <li class="list-inline-item"><a href="#">FAQs</a></li>
+                        <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                        <li class="list-inline-item"><button class="btn btn-success"
+                                onclick="location.href='../getintouch.html';">Call me back</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

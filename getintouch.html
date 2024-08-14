@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP UAE SMB Program - Call Me Back</title>
+    <link rel="stylesheet" href="home/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .left-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .left-section p {
+            font-size: 18px;
+            margin: 15px 0;
+            line-height: 1.4;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            margin-top: 5px;
+        }
+
+        .btn-custom {
+            background-color: #ffffff;
+            color: #000;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3">
+        <div style="cursor: pointer;" class="d-flex align-items-center" onclick="location.href='home/home.html';">
+            <div class="hp-logo">
+                <img src="https://via.placeholder.com/40x40?text=HP" alt="HP Logo">
+            </div>
+            <div class="ml-2 header-logo">
+                <p class="mb-0">HP App<br>Powered by Redington</p>
+            </div>
+        </div>
+        <div class="program-title text-center">
+            <h1 class="mb-0">HP UAE SMB Program</h1>
+        </div>
+        <div class="nav-links d-flex align-items-center">
+            <button class="btn btn-success mr-3" onclick="location.href='register/register.html';">Register</button>
+            <button class="btn btn-success">Signin</button>
+            <!-- <a href="#" class="mr-3">How it works >>> </a> -->
+            <!-- <a href="#" class="mr-3">1. Personal Details</a>
+            <a href="#" class="mr-3">2. Plan Details</a>
+            <a href="#">3. Contract Generation</a> -->
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 left-section">
+                <h2>Call me back</h2>
+                <p>Need assistance or have questions?</p>
+                <p>Request a callback by submitting your details, and we'll get back to you!</p>
+            </div>
+            <div class="col-md-6 right-section">
+                <form id="myForm">
+                    <div class="form-group">
+                        <label for="name">Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Id <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number <span class="text-danger">*</span></label>
+                        <input type="tel" class="form-control" id="mobile" value="+971" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Comments <span class="text-danger">*</span></label>
+                        <textarea class="form-control" id="comments" rows="3" required></textarea>
+                    </div>
+                    <div class="text-right mb-2">
+                        <button type="submit" id="submitBtn" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <p>Redington Gulf FZE<br>
+                        Level 16 Burjuman Business Tower<br>
+                        Sheikh Khalifa Bin Zayed St, Al Mankhool, Dubai, United Arab Emirates<br>
+                        <span>Email: supportb2b@redingtongroup.com</span><br>
+                        <span>Hot line: +971 4 516 1000 : Customer Support: +971 4 516 2000</span>
+                    </p>
+                </div>
+                <div class="col-md-3 text-right">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">About Us</a></li>
+                        <li class="list-inline-item"><a href="#">FAQs</a></li>
+                        <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                        <li class="list-inline-item"><button class="btn btn-success"
+                                onclick="location.href='getintouch.html';">Call me back</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function (event) {
+            event.preventDefault();
+            var form = document.getElementById('myForm');
+            if (form.checkValidity()) {
+                alert('Our representative will get in touch soon');
+            } else {
+                form.reportValidity(); // Show validation errors
+            }
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
